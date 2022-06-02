@@ -1,0 +1,22 @@
+{
+  "name": "ecomm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "concurrently npm:install:*",
+    "install:container": "npm install --prefix container",
+    "install:products": "npm install --prefix products",
+    "install:cart": "npm install --prefix cart",
+    "start": "concurrently npm:start:*",
+    "start:container": "npm start --prefix container",
+    "start:products": "npm start --prefix products",
+    "start:cart": "npm start --prefix cart"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
