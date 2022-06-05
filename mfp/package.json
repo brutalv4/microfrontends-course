@@ -8,7 +8,9 @@
     "install:auth": "npm install --prefix auth",
     "install:container": "npm install --prefix container",
     "install:dashboard": "npm install --prefix dashboard",
-    "install:marketing": "npm install --prefix marketing"
+    "install:marketing": "npm install --prefix marketing",
+    "start": "concurrently npm:start:*",
+    "start:marketing": "npm start --prefix marketing"
   },
   "keywords": [],
   "author": "",
