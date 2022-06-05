@@ -1,0 +1,19 @@
+{
+  "name": "mfp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "concurrently npm:install:*",
+    "install:auth": "npm install --prefix auth",
+    "install:container": "npm install --prefix container",
+    "install:dashboard": "npm install --prefix dashboard",
+    "install:marketing": "npm install --prefix marketing"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.2.1"
+  }
+}
